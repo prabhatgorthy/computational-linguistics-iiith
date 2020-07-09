@@ -7,7 +7,7 @@ var sen6=["the woman who called my sister sells cosmetics","the woman who sells 
 var sen7=["John goes to the library and studies","John studies and goes to the library"]
 var sen8=["John ate an apple so did she","she ate an apple so did John"]
 var sen9=["the teacher returned the book after she noticed the error","the teacher noticed the error after she returned the book","after the teacher returned the book she noticed the error","after the teacher noticed the error she returned the book","she returned the book after the teacher noticed the error","she noticed the error after the teacher returned the book","after she returned the book the teacher noticed the error","after she noticed the error the teacher returned the book"]
-var sen10=["I told her that I bought a book yesterday","I told her yesterday that I bought a book","yesterday I told her that I bought a book","I bought a book that I told her yesterday","I bought a book yesterday that I told her",	"yesterday I bought a book that I told her"]
+var sen10=["I told her that I bought a book yesterday","I told her yesterday that I bought a book","yesterday I told her that I bought a book","I bought a book that I told her yesterday","I bought a book yesterday that I told her","yesterday I bought a book that I told her"]
 
 var s1=["राम और श्याम बाजार गयें","राम और श्याम गयें बाजार","बाजार गयें राम और श्याम","गयें बाजार राम और श्याम"]
 var s2=["राम सोया और श्याम भी","श्याम सोया और राम भी","सोया श्याम और राम भी","सोया राम और श्याम भी"]
@@ -17,6 +17,25 @@ var s5=["बिल्लियों को मारकर कुत्ता �
 var s6=["एक लाल किताब वहाँ है","एक लाल किताब है वहाँ","वहाँ है एक लाल किताब","है वहाँ एक लाल किताब"]
 var s7=["एक बड़ी सी किताब वहाँ है","एक बड़ी सी किताब है वहाँ","बड़ी सी एक किताब वहाँ है","बड़ी सी एक किताब है वहाँ","वहाँ है एक बड़ी सी किताब","वहाँ है बड़ी सी एक किताब","है वहाँ एक बड़ी सी किताब","है वहाँ बड़ी सी एक किताब"]
 
+
+function goal2()
+{
+if(document.getElementById("eng").selected)
+{
+	document.getElementById("demo").innerHTML="Form a sentence(Declarative or Interrogative or any other type) from the given words"
+	document.getElementById("demo1").innerHTML="(select the buttons in proper order)"
+}
+else if (document.getElementById("hin").selected) 
+{
+	document.getElementById("demo").innerHTML="Form a sentence(Declarative or Interrogative or any other type) from the given words"
+	document.getElementById("demo1").innerHTML="(select the buttons in proper order)"
+}
+else
+{
+	document.getElementById("demo").innerHTML=""
+	document.getElementById("demo1").innerHTML=""
+}
+}
 
 
 
