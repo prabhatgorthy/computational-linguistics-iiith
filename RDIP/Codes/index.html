@@ -12,7 +12,7 @@
   body
   {
     max-width:1030px;
-    max-height:100px;
+    max-height:900px;
     margin:auto;
 
 
@@ -38,7 +38,28 @@
   padding-top:5px;
 }
 
+.navbar2 ul 
+{
+  list-style: none;
+}
+.navbar2 li
+{
+  display: inline;
+}
+.navbar2 a
+{
+padding:14px 16px;
+font-size: 15px;
+color: #00688B   ;
+text-decoration: underline;
+}
+.navbar2 a:hover
+{
 
+color:white;
+ background: #104E8B   ;
+ text-decoration: underline;
+}
 .navbar2
 {
     background-color: white;
@@ -57,7 +78,7 @@ padding-bottom: 10px
 #experiment select
 {
   font-size:15px;
-    
+
     }
 #experiment p
 {
@@ -75,15 +96,15 @@ padding-bottom: 10px
 
         <section class="h2">
 
- 
-      
+
+
         <div class="navbar2">
-        
-     
+
+
   <section id="experiment">
     <h4>Experiment</h4>
     <center>
-      <select onchange="goal3()">
+      <select onchange="goal2()">
          <option value="none" selected>---Select Language---</option>
       <option  id="eng">English</option>
    <option value="Hindi" id="hin">Hindi</option></select><br><br>
@@ -91,7 +112,7 @@ padding-bottom: 10px
    <p id="demo1" style="color:blue; font-style: italic;font-weight:lighter;"></p>
  </center>
   </section>
-  
+
      <script src="full.js"></script>
 
 </center>
