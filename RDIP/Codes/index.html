@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Virtula Labs</title>
+  <title>Virtula Labs</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -114,6 +114,14 @@ button {
   margin: 10px;
 }
 
+ #k4
+{
+  width: 300px;
+  height: 50px;
+ font-size:15px;
+  margin: 10px;
+}
+
 </style></head>
 
   <body><center>
@@ -131,14 +139,13 @@ button {
       <select onchange="goal2()">
          <option value="none" selected>---Select Language---</option>
       <option  id="eng" >English</option>
-   <option value="Hindi" id="hin" >Hindi</option></select><br><br><br><br>
+   <option value="Hindi" id="hin" >Hindi</option></select><br><br>
    <p id="fix"></p>
-   <p id="fix1" style="color:blue; font-style: italic;font-weight:lighter;"></p><br>
+   <p id="fix1" style="color:blue; font-style: italic;font-weight:lighter;"></p>
    <p id="fix3"></p>
    <p id="fix4"></p>
    <p id="fix5" ></p>
-   <button id="k3" style="visibility: hidden" >Re-form the sentence</button>
-
+   <button id="k3" style="visibility: hidden" onclick="back()">Re-form the sentence</button>
   
    
  </center>

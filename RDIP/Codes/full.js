@@ -49,6 +49,7 @@ if(document.getElementById("eng").selected)
 for(i=0;i<a1.length;i++)
 {
 		 let button = document.createElement("button");
+		 button.id='button'+i;
   button.innerHTML = a1[i]
   body.appendChild(button);
      
@@ -57,7 +58,7 @@ button.addEventListener ("click", function() {
     document.getElementById("fix5").innerHTML+=this.innerHTML+"  ";
     this.style.visibility="hidden";
     count=count+1;
-    if (count==1) 
+    if (count>0) 
      {
      	document.getElementById("k3").style.visibility="visible";
      }
@@ -91,6 +92,7 @@ else if (document.getElementById("hin").selected)
 for(i=0;i<b1.length;i++)
 {
 		 let button = document.createElement("button");
+		 button.id='button'+i
   button.innerHTML = b1[i]
   body.appendChild(button)
 
@@ -99,7 +101,7 @@ button.addEventListener ("click", function() {
     document.getElementById("fix5").innerHTML+=this.innerHTML+"  ";
     this.style.visibility="hidden";
     count=count+1;
-    if (count==1) 
+    if (count>0) 
      {
      	document.getElementById("k3").style.visibility="visible";
      }
@@ -118,5 +120,20 @@ else
 	document.getElementById("fix").innerHTML=""
 	document.getElementById("fix1").innerHTML=""
 	document.getElementById("fix3").innerHTML=""
+}
+}
+function back()
+
+{
+
+	for(i=0;i<a1.length||i<b1.length;i++)
+	{
+	  if(document.getElementById('button'+i).style.visibility=="hidden")
+	  
+	  	document.getElementById('button'+i).style.visibility="visible";
+	  document.getElementById('fix4').innerHTML=""
+	  document.getElementById('fix5').innerHTML=""
+	  document.getElementById('k3').style.visibility="hidden"
+	
 }
 }
