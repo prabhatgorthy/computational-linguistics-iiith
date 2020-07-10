@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Virtula Labs</title>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Virtula Labs</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 
 <style>
 
   body
   {
     max-width:1000px;
-    max-height:40px;
+    max-height:400px;
     margin:auto;
 
 
@@ -40,27 +41,78 @@ padding-bottom: 10px
 #exp select
 {
   font-size:15px;
-
+    
     }
-#exp p
+#fix
 {
    font-size:13px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     line-height: 0.3;
+     line-height: 0.1;
      color:#00009C;
      font-weight: bolder;
 
 }
+#fix1
+{
+   font-size:13px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     line-height: 0.1;
+     color:#00009C;
+     font-weight: bolder;
+
+}
+#fix3
+{
+   font-size:13px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     line-height: 0.1;
+     color:#00009C;
+     font-weight: bolder;
+     padding-bottom: 10px;
+
+}
+#fix4
+{
+   font-size:13px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     line-height: 0.1;
+     color:#00009C;
+     font-weight: bolder;
+     padding-bottom: 10px;
+
+}
+#fix5
+{
+   font-size:13px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     line-height: 0.1;
+     color:#00009C;
+     font-weight: bolder;
+     padding-bottom: 10px;
+
+}
+
 button {
   width: 75px;
-  height: 25px;
+  height: 30px;
  
-  margin: 10px;
+  margin: 2px;
   
   
 
 }
-
+#fix5
+{
+  font-size: 30px;
+  color :#484848;
+}
+ #k3
+{
+  width: 180px;
+  height: 30px;
+ font-size:15px;
+  margin: 10px;
+}
 
 </style></head>
 
@@ -78,17 +130,21 @@ button {
     <center>
       <select onchange="goal2()">
          <option value="none" selected>---Select Language---</option>
-      <option  id="eng" onchange="clear()">English</option>
-   <option value="Hindi" id="hin" onchange="clear()">Hindi</option></select><br><br>
+      <option  id="eng" >English</option>
+   <option value="Hindi" id="hin" >Hindi</option></select><br><br><br><br>
    <p id="fix"></p>
-   <p id="fix1" style="color:blue; font-style: italic;font-weight:lighter;"></p>
+   <p id="fix1" style="color:blue; font-style: italic;font-weight:lighter;"></p><br>
    <p id="fix3"></p>
-   <p id="demo4"></p>
+   <p id="fix4"></p>
+   <p id="fix5" ></p>
+   <button id="k3" style="visibility: hidden" >Re-form the sentence</button>
+
+  
    
  </center>
+ 
   
-  
-     <script src="jil.js"></script>
+     <script src="full.js"></script>
 
 </center>
 </body>
