@@ -23,26 +23,36 @@ var allhin=["राम और श्याम बाजार गयें","र
 
 function goal2()
 {
+	 b=allhin[Math.floor(Math.random() * allhin.length)];
+            b1=b.split(" ");
+            	a=alleng[Math.floor(Math.random() * alleng.length)];
+a1=a.split(" ");
 	document.getElementById("fix3").innerHTML=""
 	document.getElementById("fix5").innerHTML=""
 	document.getElementById("fix4").innerHTML=""
+
+
 	document.getElementById("k3").style.visibility="hidden";
+	document.getElementById('k4').style.visibility="hidden"
+
 	count=0
+	
 
 if(document.getElementById("eng").selected)
 {
 
+
 	document.getElementById("fix").innerHTML="Form a sentence(Declarative or Interrogative or any other type) from the given words"
 	document.getElementById("fix1").innerHTML="(select the buttons in proper order)";
-	var a=alleng[Math.floor(Math.random() * alleng.length)];
+	
 	let body = document.getElementsByTagName("p")[3];
-	a1=a.split(" ");
+	
 	for(i=0;i<a1.length;i++)
 {
 	j=Math.floor(Math.random()*a1.length)
-	a=a1[i];
+	a2=a1[i];
 	a1[i]=a1[j]
-	a1[j]=a;
+	a1[j]=a2;
 }
 
 
@@ -50,43 +60,51 @@ for(i=0;i<a1.length;i++)
 {
 		 let button = document.createElement("button");
 		 button.id='button'+i;
+	
   button.innerHTML = a1[i]
   body.appendChild(button);
      
 button.addEventListener ("click", function() {
 	document.getElementById("fix4").innerHTML="Formed Sentence<span style='font-style:italic;color:blue;font-weight:lighter'>(after selecting words):</span>";
-    document.getElementById("fix5").innerHTML+=this.innerHTML+"  ";
+    document.getElementById("fix5").innerHTML+=this.innerHTML+" ";
     this.style.visibility="hidden";
     count=count+1;
-    if (count>0) 
+ 
+    if (count>0 ) 
      {
      	document.getElementById("k3").style.visibility="visible";
      }
-    if (count==a1.length) 
+     var r=String(document.getElementById("fix5").innerHTML).replace(/\s+$/, '');
+     r1=r.split(" ")
+  
+     
+     if(a1.length==r1.length)
      {
      	document.getElementById("k4").style.visibility="visible";
      }
+
+
 });
 
 }
+}
 
    
-}
+
 else if (document.getElementById("hin").selected) 
 { 
-	document.getElementById("fix3").innerHTML=""
+	
 
 	document.getElementById("fix").innerHTML="Form a sentence(Declarative or Interrogative or any other type) from the given words"
 	document.getElementById("fix1").innerHTML="(select the buttons in proper order)";
-	var b=allhin[Math.floor(Math.random() * allhin.length)];
-            b1=b.split(" ");
+	
 	let body = document.getElementsByTagName("p")[3];
 	for(i=0;i<b1.length;i++)
 {
 	j=Math.floor(Math.random()*b1.length)
-	a=b1[i];
+	a2=b1[i];
 	b1[i]=b1[j]
-	b1[j]=a;
+	b1[j]=a2;
 
 }
 for(i=0;i<b1.length;i++)
@@ -98,16 +116,20 @@ for(i=0;i<b1.length;i++)
 
 button.addEventListener ("click", function() {
 	document.getElementById("fix4").innerHTML="Formed Sentence<span style='font-style:italic;color:blue;font-weight:lighter'>(after selecting words):</span>";
-    document.getElementById("fix5").innerHTML+=this.innerHTML+"  ";
+    document.getElementById("fix5").innerHTML+=this.innerHTML+" ";
     this.style.visibility="hidden";
     count=count+1;
+
     if (count>0) 
      {
      	document.getElementById("k3").style.visibility="visible";
      }
-    if (count==a1.length) 
+      var r=String(document.getElementById("fix5").innerHTML).replace(/\s+$/, '');
+     r1=r.split(" ")
+    if (b1.length==r1.length) 
      {
      	document.getElementById("k4").style.visibility="visible";
+     
      }
 });
 
@@ -122,18 +144,19 @@ else
 	document.getElementById("fix3").innerHTML=""
 }
 }
-function back()
+function reset()
 
 {
 
-	for(i=0;i<a1.length||i<b1.length;i++)
-	{
-	  if(document.getElementById('button'+i).style.visibility=="hidden")
-	  
-	  	document.getElementById('button'+i).style.visibility="visible";
-	  document.getElementById('fix4').innerHTML=""
-	  document.getElementById('fix5').innerHTML=""
-	  document.getElementById('k3').style.visibility="hidden"
-	
+  for(i=0;i<a1.length||i<b1.length;i++)
+  {
+    if(document.getElementById('button'+i).style.visibility=="hidden")
+    {
+   document.getElementById('button'+i).style.visibility="visible";
+    document.getElementById('fix4').innerHTML=""
+    document.getElementById('fix5').innerHTML=""
+    document.getElementById('k3').style.visibility="hidden"
+     document.getElementById('k4').style.visibility="hidden"   
+}
 }
 }
