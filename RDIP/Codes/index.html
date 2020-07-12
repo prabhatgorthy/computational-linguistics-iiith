@@ -123,10 +123,16 @@ button {
 }
 #k5
 {
-  width: 200px;
+  width: 180px;
   height: 30px;
- font-size:15px;
+ font-size:13px;
   margin: 10px;
+}
+#fix7
+{
+  font-size:15px;
+  color :black;
+  line-height: 1.6;
 }
 
 </style></head>
@@ -155,7 +161,8 @@ button {
    <button id="k3" style="visibility: hidden" onclick="back()">Re-form the sentence</button><br>
 <button id="k4" style="visibility: hidden" onclick="find()" >Check the correctness of this sentence</button>
 <p id="fix6"></p>
-<button id="k5" style="visibility: hidden" >Get Correct Sentence</button>
+<button id="k5" style="visibility: hidden" onclick="toggle()">Get Correct Sentence</button><br>
+<p id="fix7"></p>
  </center>
 
      <script src="full.js"></script>

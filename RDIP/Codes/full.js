@@ -33,7 +33,8 @@ a1=a.split(" ");
     document.getElementById("fix5").innerHTML=""
     document.getElementById("fix4").innerHTML=""
     document.getElementById("fix6").innerHTML=""
-
+    document.getElementById("fix7").innerHTML=""
+    document.getElementById("k5").innerHTML="Get Correct Sentence"
 
 
     document.getElementById("k3").style.visibility="hidden";
@@ -155,6 +156,7 @@ function back()
     document.getElementById('fix4').innerHTML=""
     document.getElementById('fix5').innerHTML=""
     document.getElementById('fix6').innerHTML=""
+    document.getElementById("fix7").innerHTML=""
     document.getElementById('k3').style.visibility="hidden"
      document.getElementById('k4').style.visibility="hidden" 
       document.getElementById("k5").style.visibility="hidden";  
@@ -226,5 +228,72 @@ else
   
 }
 
+}
+}
+
+function toggle()
+{
+f=alleng.indexOf(a)
+s=lan1[f]
+g=allhin.indexOf(b)
+r=lan2[g]
+
+
+
+if(document.getElementById("eng").selected)
+  {
+    if(document.getElementById("k5").innerHTML=="Get Correct Sentence")
+    {
+       for(i=0;i<s.length;i++)
+  { 
+   document.getElementById("fix7").innerHTML+=s[i]+"<br>";
+   document.getElementById("k5").innerHTML="Hide the correct Sentence" 
+} 
+}
+else if(document.getElementById("k5").innerHTML=="Hide the correct Sentence")
+  {
+    
+   document.getElementById("fix7").innerHTML=""
+   document.getElementById("k5").innerHTML="Get Answers"
+}
+else if(document.getElementById("k5").innerHTML=="Get Answers")
+{
+
+       for(i=0;i<s.length;i++)
+  { 
+   document.getElementById("fix7").innerHTML+=s[i]+"<br>";
+   document.getElementById("k5").innerHTML="Hide the correct Sentence" 
+} 
+}
+}
+else if(document.getElementById("hin").selected)
+  { 
+
+    if(document.getElementById("k5").innerHTML=="Get Correct Sentence")
+    {
+       for(i=0;i<r.length;i++)
+  { 
+   document.getElementById("fix7").innerHTML+=r[i]+"<br>";
+   document.getElementById("k5").innerHTML="Hide the correct Sentence" 
+} 
+}
+else if(document.getElementById("k5").innerHTML=="Hide the correct Sentence")
+  {
+    
+   document.getElementById("fix7").innerHTML=""
+   document.getElementById("k5").innerHTML="Get Answers"
+}
+else if(document.getElementById("k5").innerHTML=="Get Answers")
+{
+
+  for(i=0;i<r.length;i++)
+
+  {
+   
+   document.getElementById("fix7").innerHTML+=r[i]+"<br>";
+   document.getElementById("k5").innerHTML="Hide the correct Sentence" 
+} 
+ 
+}
 }
 }
