@@ -23,7 +23,7 @@ var allhin=["राम और श्याम बाजार गयें","र
 
 
 
-function goal2()
+function final()
 {
      b=allhin[Math.floor(Math.random() * allhin.length)];
           b1=b.split(" ");
@@ -72,7 +72,7 @@ for(i=0;i<a1.length;i++)
 button.addEventListener ("click", function() {
     document.getElementById("fix4").innerHTML="Formed Sentence<span style='font-style:italic;color:blue;font-weight:lighter'>(after selecting words):</span>";
     document.getElementById("fix5").innerHTML+=this.innerHTML+" ";
-    this.style.visibility="hidden";
+    this.style.display="none";
     count=count+1;
  
     if (count>0 ) 
@@ -117,7 +117,7 @@ for(i=0;i<b1.length;i++)
 button.addEventListener ("click", function() {
     document.getElementById("fix4").innerHTML="Formed Sentence<span style='font-style:italic;color:blue;font-weight:lighter'>(after selecting words):</span>";
     document.getElementById("fix5").innerHTML+=this.innerHTML+" ";
-    this.style.visibility="hidden";
+    this.style.display="none";
     count=count+1;
 
     if (count>0) 
@@ -150,9 +150,9 @@ function back()
 
   for(i=0;i<a1.length||i<b1.length;i++)
   {
-    if(document.getElementById('button'+i).style.visibility=="hidden")
+    if(document.getElementById('button'+i).style.display=="none")
     {
-   document.getElementById('button'+i).style.visibility="visible";
+   document.getElementById('button'+i).style.display="inline";
     document.getElementById('fix4').innerHTML=""
     document.getElementById('fix5').innerHTML=""
     document.getElementById('fix6').innerHTML=""
