@@ -1,0 +1,17 @@
+experiment starts with a corpus selection .
+
+To begin experiment select a corpus from corpus 1, corpus 2, and corpus 3 from dropdown.
+
+upon selection the corpus text is displayed to us.
+
+after selecting, we get single paragraph from which we have to find the no.of tokens(total words) and no.of types(unique words) and fill them in the text provided.
+
+Then 2 text boxes appear with in a table which take numbers as input and one box takes number of tokens and another the types.
+
+
+The input boxes also turn into green on red if they have the correct and the wrong answer respectively.
+
+
+ If the entered value is correct then this displayed in green with text "Right Answer" and the experiment gets completed.
+
+ If the value is incorrect then it is displayed in red with text "Wrong Answer"
